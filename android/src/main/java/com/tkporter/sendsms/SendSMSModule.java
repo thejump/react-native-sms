@@ -82,7 +82,7 @@ public class SendSMSModule extends ReactContextBaseJavaModule implements Activit
                 //Samsung for some reason uses commas and not semicolons as a delimiter
                 String separator = "; ";
                 if(android.os.Build.MANUFACTURER.equalsIgnoreCase("Samsung")){
-                    separator = ", ";
+                    separator = "; ";
                 }
                 String recipientString = "";
                 for (int i = 0; i < recipients.size(); i++) {
