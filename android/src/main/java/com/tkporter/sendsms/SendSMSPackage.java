@@ -28,10 +28,7 @@ public class SendSMSPackage implements ReactPackage {
         return Arrays.<NativeModule>asList(sendSms);
     }
 
-    @Override
-    public List<Class<? extends JavaScriptModule>> createJSModules() {
-        return Collections.emptyList();
-    }
+  
 
     @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
